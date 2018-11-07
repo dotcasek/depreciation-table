@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title>Depreciation Calculator</title>
+	</head>
+	<body>
+		<form action ="Depreciation.jsp" method ="get">
+		<table width = "60%" align = "center" border = "5" bgcolor="lightblue">
+		<tr>
+		<td align ="center">
+			<h1>Depreciation Calculator</h1>
+		</td>
+		</tr>
+		<tr>
+		<td>
+		<table>
+		<tr><td align = "right">Enter value of Item: </td><td><input type= "text" name ="value"></td></tr>
+		<tr><td align = "right">Enter Scrap Value: </td><td><input type = "text" name ="scrap"></td></tr>
+		<tr><td align = "right">Enter number of Years: </td><td><input type= "text" name = "years"></td></tr>
+		</table>
+		</td>
+		</tr>
+		<tr>
+		<td align ="center">
+			<input type = "radio" checked name ="depMode" value = 1>Straight Line
+			<input type = "radio" name ="depMode" value = 2>Sum of Years
+			<input type = "radio" name ="depMode" value = 3>Units of Production
+			<input type = "radio" name ="depMode" value = 4>Double Declining Balance
+			<input type = "hidden" name= "unitsPerYear" value=-999 />
+
+		</td>
+		</tr>
+		<tr>
+		<td align ="center">
+		<br>
+		<input type="submit" value="Calculate Depreciation">
+		<br>
+		</td>
+		</tr>
+		</table>
+		
+		<center>
+		<br>
+		<input type = "reset" value ="Reset Data">
+		</center>
+		</form>
+	</body>
+</html>
+							
